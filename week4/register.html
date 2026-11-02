@@ -22,29 +22,74 @@
         <section>
             <h2>Student Registration form</h2>
             <form action="#" method="post">
+                <!--name-->
                 <lavel for="name">Full Name:</lavel>
-                <input type="text" id="name name="name" required> <br><br>
+                <input type="text" id="name name="name"  placeholder=" e.g raza"required> <br><br>
+                <!--eamil-->
                 <lavel for="Email">Email:</lavel>
                 <input type="Email" id="Email" name="Email" required> <br><br>
-                <lavel for="Paswords">Password</lavel>
-                <input type="Password" id="Password" name="password" required> <br><br> 
+                <!--password-->
+                <lavel for="Paswords">Password:</lavel>
+                <input type="Password" id="Password" name="password" required> <br><br>
+                <!--date--> 
                 <lavel for="Date">Date:</lavel>
-                <input type="Date" id="Date" name="Date" required> <br><br>  
-                <lavel for="Phone Number"></lavel>
+                
+                <input type="Date" id="Date" name="Date" required> <br><br>
+                <!--phone-->  
+                <lavel for="Phone Number">Phone:</lavel>
                 <input type="tel"id="phone" name="phone" required> <br><br>  
             
-                <input type="" text="" id="" name="" required>  
-                <lavel for=""></lavel>
-                <input type="" text="" id="" name="" required>  
-                <lavel for=""></lavel>
-                <input type="" text="" id="" name="" required>  
-                <lavel for=""></lavel>
-                <input type="" text="" id="" name="" required>           
+                <!-- radio buttons -->
+                 <p> Select Your Gender:</p>
+                 <input type="radio" id="male" name="gender" value="male">
+                 <lavel for="male">male</lavel>
+                 
+                 <input type="radio" id="female" name="gender" value="female">
+                 <lavel for="female">female</lavel>
+                 <br><br>
+
+                 <!--checkboxes-->
+                 <p>Select your Interests:</p>
+                 <input type="checkbox" id="coding" name="interest" value="coding">
+                 <lavel for="coding">coding</lavel>
+
+                 <input type="checkbox" id="web" name="interest" value="web development">
+                 <lavel for="web">web development</lavel>
+
+                 <input type="checkbox" id="AI" name ="interest" value="Artificial Intelligence">
+                 <lavel for="Ai">Artificial Intelligence</lavel>
+                 <br><br>
+                 <!--dropdown-->
+
+                 <lavel for="event">Choose an event:</lavel>
+                 <select id="event" name="event">
+                    <option value="" select an event></option>
+                    <option value="coding"></option> 
+                    <option value="web development workshop"></option>
+                    <option value="AI">AI technology Seminar</option>
+                    <br><br>
+                 </select>
+
+                 <br><br>
+
+                 <!--messages-->
+                 <lavel for="messages">your messages:</lavel>
+                 <br>
+                 <textarea id="messages" name="messages" rows="5" cols="30"
+                 placeholder="write your messaages please here😉" required></textarea>
+                 <br><br>
+                 <!--submit button-->
+                 <button type="submit">Submit Registration</button>
+                 
             </form>
         </section>
 
 
 
     </main>
+    <hr>
+    <footer>
+        <p>© 2026 tech Club</p>
+    </footer>
 </body>
 </html>
