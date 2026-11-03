@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>profile card</title>
+    <style> 
     * {
-        box-sizing
+        box-sizing:border-box;
     }
+    body {
+        font-family:Arial, Helvetica, sans-serif;
+        background:lightgray;
+        margin:0px;
+
+        /* sticky top bar */
+        .navbar {
+            background: blue;
+            color:white;
+            padding: 15px;
+            position:sticky;
+            top: 0;
+            z-index: index 2;}
+            /* profile card */
+            .card {
+                width: 300px;
+                background:white;
+                border: 2px solid black;
+
+            }
+
+
+    }
+    </style>
 </head>
 <body>
     <div class="navbar">
@@ -14,7 +39,7 @@
     </div>
     <div class="card">
         <div class="avatar"></div>
-        <h2>ahmad Raza khan</h2>
+        <h2>Ahmad Raza khan</h2>
         <p>Btech CSE Students</p>
         <div class="bio">
             I am learning java, htlm and css.
