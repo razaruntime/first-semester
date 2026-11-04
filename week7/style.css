@@ -1,1 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: arial, sans-sarif;
+}
+/* 7.1 navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #172554;
+    color:white;
+    .nav-right {
+        display:flex;
+        align-items: center;
+        gap: 25px;
+    }
+    button {
+        padding: flex;
+        background-color: #256325;
+        color:white;
+        border-radius: 5px;
+        cursor:pointer;
+    }
 
+}
