@@ -1,0 +1,145 @@
+
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+}
+
+/* Main Dashboard Grid */
+.dashboard {
+    min-height: 100vh;
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 80px 1fr 60px;
+
+    grid-template-areas:
+        "head head"
+        "side main"
+        "foot foot";
+
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Header */
+.header {
+    grid-area: head;
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-area: side;
+    background-color: #334155;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 25px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Main Content */
+.main {
+    grid-area: main;
+    background-color: white;
+    padding: 25px;
+}
+
+.main h2 {
+    margin-bottom: 25px;
+}
+
+/* Automatic Grid Layout */
+.card-container {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    gap: 20px;
+}
+
+/* Dashboard Cards */
+.card {
+    background-color: #e2e8f0;
+    padding: 25px 15px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card span {
+    font-size: 30px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #334155;
+}
+
+/* Footer */
+.footer {
+    grid-area: foot;
+    background-color: #1e293b;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+
+        grid-template-rows: auto auto 1fr auto;
+
+        grid-template-areas:
+            "head"
+            "side"
+            "main"
+            "foot";
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
