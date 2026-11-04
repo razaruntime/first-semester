@@ -1,0 +1,278 @@
+/* =================================
+   1. GENERAL STYLING
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =================================
+   2. NAVIGATION BAR
+   Mobile First Design
+================================= */
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: #14213d;
+    color: white;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navbar nav a {
+    color: white;
+    font-size: 1rem;
+}
+
+.nav-button {
+    background-color: #fca311;
+    color: #14213d;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* =================================
+   3. HERO SECTION
+================================= */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 1.5rem;
+    align-items: center;
+    background-color: #f1f5f9;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.tagline {
+    color: #fca311;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #14213d;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.primary-button {
+    display: inline-block;
+    background-color: #14213d;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+
+/* =================================
+   4. FEATURES SECTION
+================================= */
+
+.features {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    color: #14213d;
+}
+
+.section-description {
+    color: #666;
+    margin: 0.5rem 0 2rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.feature-card {
+    padding: 2rem 1rem;
+    background-color: #f1f5f9;
+    border-radius: 10px;
+}
+
+.feature-card h3 {
+    color: #14213d;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.feature-card p {
+    color: #555;
+}
+
+
+/* =================================
+   5. ABOUT SECTION
+================================= */
+
+.about {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    background-color: #14213d;
+    color: white;
+}
+
+.about h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+/* =================================
+   6. CONTACT SECTION
+================================= */
+
+.contact {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 1.8rem;
+    color: #14213d;
+    margin-bottom: 0.8rem;
+}
+
+.contact p {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+
+/* =================================
+   7. FOOTER
+================================= */
+
+footer {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+
+/* =================================
+   8. TABLET RESPONSIVE DESIGN
+   Screen: 768px and above
+================================= */
+
+@media (min-width: 768px) {
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        padding: 4rem 2rem;
+    }
+
+    .hero-content {
+        text-align: left;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =================================
+   9. LAPTOP RESPONSIVE DESIGN
+   Screen: 1024px and above
+================================= */
+
+@media (min-width: 1024px) {
+
+    .hero {
+        padding: 5rem 4rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .features {
+        padding: 4rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about,
+    .contact {
+        padding: 4rem;
+    }
+
+}
