@@ -13,7 +13,7 @@ body {
     align-items: center;
     padding: 20px 40px;
     background-color: #172554;
-    color:white;
+    color:white; }
     .nav-right {
         display:flex;
         align-items: center;
@@ -26,5 +26,44 @@ body {
         border-radius: 5px;
         cursor:pointer;
     }
-
+    /* 7.2 banner */
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        min-height: 350px;
+        background-color: #dbeafe;
+        gap: 15px;
+    }
+    /* 7.3 cards*/
+    .cards {
+        flex: 1 1 200px;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 30px;
+    
 }
+        .card {
+            flex: 1 1 200px;
+            padding: 30px;
+            background-color: #f1f5f9;
+            border-radius: 10px;
+            text-align: center;
+
+
+        }
+        /* responsive design */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-right {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+
